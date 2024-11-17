@@ -4,9 +4,9 @@ Feature: Navigation bar
  I can click the navigation bar links
 @Courses
 Scenario: I can access the subpages through the navigation bar
-  Given I navigate to www.freerangetesters.com
+  Given navegar a free www.freerangetesters.com
   When Seleccionar en el Navigate bar Cursos
-  And Seleccionar Funamentos Testing
+  And Seleccionar Fundamentos Testing
 
 @Plans
   Scenario: Users can select a plan when signing up
