@@ -7,7 +7,7 @@ pipeline {
    }
     stages{
         stage("Tarea de Limpieza"){
-            step{
+            steps{
                 //Agarra el Repo donde se encuentra el codigo que se necesita correr
                 git 'https://github.com/JhonHiguita99/SelenuimUdemy.git'
 
