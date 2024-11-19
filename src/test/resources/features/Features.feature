@@ -8,8 +8,8 @@ Scenario: I can access the subpages through the navigation bar
   When Seleccionar en el Navigate bar Cursos
   And Seleccionar Fundamentos Testing
 
-@Plans
-  Scenario: Users can select a plan when signing up
+@Google
+  Scenario: Usuario navega a Google
     Given I navigate to www.freerangetesters.com
-    When I select Elegir Plan
-    Then I can validate the options in the chechout page
+    When Selecciona recursos
+    And seleccionar el Automation Sandbox
