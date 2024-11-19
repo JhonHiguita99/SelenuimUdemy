@@ -10,7 +10,7 @@ pipeline {
             steps{
                 git branch: 'main',
                 url: 'https://github.com/JhonHiguita99/SelenuimUdemy.git'
-                Ejecutar la tarea Clean
+                //Ejecutar la tarea Clean
                 sh 'gradle clean'
            }
        }
