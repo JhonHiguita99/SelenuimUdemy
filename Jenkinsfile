@@ -8,9 +8,9 @@ pipeline {
     stages{
         stage("Tarea de Limpieza"){
             steps{
-                checkout scmGit(branches: [[name: 'main']],
-                userRemoteConfigs: [[url: 'https:'https://github.com/JhonHiguita99/SelenuimUdemy.git'']])
-                //Ejecutar la tarea Clean
+                git branch: 'main',
+                url: 'https://github.com/JhonHiguita99/SelenuimUdemy.git'
+                Ejecutar la tarea Clean
                 sh 'gradle clean'
            }
        }
