@@ -8,9 +8,8 @@ pipeline {
     stages{
         stage("Tarea de Limpieza"){
             steps{
-                //Agarra el Repo donde se encuentra el codigo que se necesita correr
-                git 'https://github.com/JhonHiguita99/SelenuimUdemy.git'
-
+                checkout scmGit(branches: [[name: 'main']],
+                userRemoteConfigs: [[url: 'https:'https://github.com/JhonHiguita99/SelenuimUdemy.git'']])
                 //Ejecutar la tarea Clean
                 sh 'gradle clean'
            }
