@@ -8,8 +8,7 @@ pipeline {
     stages{
         stage("Tarea de Limpieza"){
             steps{
-                git branch: 'main',
-                url: 'https://github.com/JhonHiguita99/SelenuimUdemy.git'
+                git 'https://github.com/JhonHiguita99/SelenuimUdemy.git'
                 //Ejecutar la tarea Clean
                 sh 'gradle clean'
            }
