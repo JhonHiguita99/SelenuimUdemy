@@ -13,10 +13,14 @@ pipeline {
                 sh 'gradle clean'
            }
        }
-       stage("Imprimo Cositas"){
-            steps{
-                echo "Soy Un stage aparte"
-            }
-       }
    }
+       post {
+            failure {
+                echo 'Siempre me voy a aparecer al job fallar'
+           }
+            success {
+                echo 'la ejecución termino SUCCESS'
+           }
+      }
+
 }

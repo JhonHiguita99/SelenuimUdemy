@@ -10,7 +10,7 @@ import pages.BasePage;
 @CucumberOptions(features = "src\\test\\resources", // este es el directoria de nuestros archivos .features
         glue = "steps" , // ruta donde tenemos definidos los Steps
         plugin = {"pretty","html:target/cucumber-reports"},// ruta donde se generan los reportes de test ejecutados
-        tags = ""
+        tags = "@Courses or @Google"
 )
 public class testRunner {
     @AfterClass
